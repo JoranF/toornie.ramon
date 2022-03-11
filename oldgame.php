@@ -82,7 +82,7 @@ $result = $conn->query($sql);
                     <img src="https://picsum.photos/200/300" alt="" width="32" height="32" class="rounded-circle me-2">
                     <strong><?php print $_SESSION['user']['first_name']; ?></strong>
                 </span>
-                <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser" style="">
+                <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser">
                     <?php if ($admin) : ?>
                         <li><a class="dropdown-item" href="#">Admin dashboard</a></li>
                         <li>
