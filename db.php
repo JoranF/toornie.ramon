@@ -13,10 +13,10 @@ class db
     
     function __construct()
     {
-        $this->host   = 'ec2-52-211-158-144.eu-west-1.compute.amazonaws.com';
-        $this->dbname = 'd7e1f0hlef1d09';
-        $this->user   = 'bhixzczxqlzvfp';
-        $this->pass   = 'f693a65b786a7384b0eb8f4ec9f958fff12e3e5a313194571f0753b09c75bbc1';
+        $this->host   = 'ec2-34-253-116-145.eu-west-1.compute.amazonaws.com';
+        $this->dbname = 'd20afrlmsm5k7l';
+        $this->user   = 'bpfvfronfwqovn';
+        $this->pass   = 'e2f3577183c31cde56f27f88fbb725435cc3d45388fa0bf4fbc4189dfb65c8be';
         $this->port   = '5432';
 
         
