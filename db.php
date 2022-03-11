@@ -13,12 +13,14 @@ class db
     
     function __construct()
     {
-        $this->host   = 'localhost';
-        $this->dbname = 'toornooi';
-        $this->user   = 'root';
-        $this->pass   = '';
+        $this->host   = 'ec2-52-211-158-144.eu-west-1.compute.amazonaws.com';
+        $this->dbname = 'd7e1f0hlef1d09';
+        $this->user   = 'bhixzczxqlzvfp';
+        $this->pass   = 'f693a65b786a7384b0eb8f4ec9f958fff12e3e5a313194571f0753b09c75bbc1';
+        $this->port   = '5432';
+
         
-        $this->dsn = 'mysql:host=' . $this->host . ';dbname=' . $this->dbname;
+        $this->dsn = 'mysql:host=' . $this->host . ';dbname=' . $this->dbname . ';port='.$this->port;
         
         $this->options = array(
             PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
@@ -31,7 +33,7 @@ class db
     {
         try
         {
-            return new PDO($this->dsn, $this->user, $this->pass, $this->options);
+            return new PDO($this->dsn, $this->user, $this->pass,  $this->options);
         }
         catch(PDOException $e)
         {
